@@ -1,0 +1,34 @@
+html, body {
+	width: 1400px;
+	margin: auto;
+	overflow-x: scroll;
+}
+
+#wrapper {
+	width: 2840px;
+	background-color: #e7e7e7;
+}
+
+.sec1 {
+	display: inline-block;
+	width: 700px;
+	height: 700px;
+	margin-left: 350px;
+	background-color: yellow;
+}
+
+.sec2 {
+	display: inline-block;
+	width: 700px;
+	height: 700px;
+	margin-left: 8px;
+	margin-right: 8px;
+	background-color: yellow;
+}
+
+.sec3 {
+	display: inline-block;
+	width: 700px;
+	height: 700px;
+	background-color: yellow;
+}
