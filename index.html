@@ -17,39 +17,42 @@
 		<div id="wrapper" ng-controller="SliderCtrl">
 			<!-- 	<button id="left"></button>
 			<button id="right"></button> -->
-			<div class="sec1">
+			<div class="sec1" ng-class="{ 'sec1-2': chosen === 2, 'sec1-3': chosen === 3 }">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
+						<p>{{chosen}}</p>
 						<p>sec1</p>
 						<p>sec1</p>
 						<p>sec1</p>				
 					</div>
 					<div class="col-md-1">
-						<a class="btn btn-primary" href="">-></a>
+						<a ng-hide="chosen === 2" class="btn btn-primary" ng-click="chosen = 2">-></a>
 					</div>
 				</div>
 			</div>
 			<div class="sec2">
 				<div class="row">
 					<div class="col-md-1">
-						<a class="btn btn-primary" href=""><-</a>
+						<a ng-hide="chosen === 1" class="btn btn-primary" ng-click="chosen = 1"><-</a>
 					</div>
 					<div class="col-md-10">
+					<p>{{chosen}}</p>
 						<p>sec1</p>
 						<p>sec1</p>
 						<p>sec1</p>				
 					</div>
 					<div class="col-md-1">
-						<a class="btn btn-primary" href="">-></a>
+						<a ng-hide="chosen === 3" class="btn btn-primary" ng-click="chosen = 3">-></a>
 					</div>
 				</div>
 			</div>
 			<div class="sec3">
 				<div class="row">
 					<div class="col-md-1">
-						<a class="btn btn-primary" href=""><-</a>
+						<a ng-hide="chosen === 2" class="btn btn-primary" ng-click="chosen = 2"><-</a>
 					</div>
 					<div class="col-md-10">
+					<p>{{chosen}}</p>
 						<p>sec1</p>
 						<p>sec1</p>
 						<p>sec1</p>				
